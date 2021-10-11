@@ -5,9 +5,8 @@ on:
     branches: [ main ]
 
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
-
-steps:
-  - name: run Eslint
-    run: make lint
+    steps:
+      - name: Run Eslint
+        run: make lint
