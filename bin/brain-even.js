@@ -2,4 +2,3 @@
 import { playGame } from '../src/evenRounds.js';
 
 playGame();
-

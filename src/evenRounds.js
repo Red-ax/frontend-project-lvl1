@@ -8,6 +8,7 @@ const randomInt = (min, max) => {
     return Math.floor(Math.random() * (maxInt - minInt)) + minInt;
 };
 
+// eslint-disable-next-line import/prefer-default-export
 export const playGame = () => {
     let correctAnswer = 0;
     greetings();
@@ -21,11 +22,11 @@ export const playGame = () => {
         correctAnswer += 1;
 
         if ((randomNumb % 2 === 0 && answer !== 'yes') || (randomNumb % 2 === 1 && answer !== 'no')) {
-            return console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
+            return console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name()}!`);
         }
         console.log('Correct!');
     }
-    return console.log(`Congratulations, ${name}!`);
+    return console.log(`Congratulations, ${name()}!`);
 };
 
 // export default playGame();
