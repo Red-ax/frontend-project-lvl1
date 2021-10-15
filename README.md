@@ -5,4 +5,8 @@
 
 ![example workflow](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
 
-https://asciinema.org/a/PkRK4jqn9dcQNFMoZdp0GXr08
+brain-even
+[![asciicast](https://asciinema.org/a/PkRK4jqn9dcQNFMoZdp0GXr08.svg)](https://asciinema.org/a/PkRK4jqn9dcQNFMoZdp0GXr08)
+
+brain-calc
+[![asciicast](https://asciinema.org/a/AKbmcofbCoxI1WBOQjF7xFO2Y.svg)](https://asciinema.org/a/AKbmcofbCoxI1WBOQjF7xFO2Y)
