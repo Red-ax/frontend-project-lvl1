@@ -8,7 +8,7 @@ export const playGameBrainGCD = () => {
     let i = 0;
     greetings();
 
-    console.log('Find the greatest common divisor of given numbers.');
+    console.log('What number is missing in the progression?');
 
     while (i < 3) {
         const firstRandomNumb = randomInt(1, 30);
