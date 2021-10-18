@@ -17,11 +17,26 @@ export const playGameBrainCalc = () => {
         const expression = `Question: ${`${firstRandomNumb} ${mathOperator[i]} ${secondRandomNumb}`}`;
         console.log(expression);
         const answer = readlineSync.question('Your answer: ');
+
+        let result = 0;
+        switch (mathOperator[i]) {
+        case '+':
+            result = firstRandomNumb + secondRandomNumb;
+            break;
+        case '-':
+            result = firstRandomNumb - secondRandomNumb;
+            break;
+        case '*':
+            result = firstRandomNumb * secondRandomNumb;
+            break;
+        default:
+            console.log('Fail');
+        }
+
         i += 1;
-        // eslint-disable-next-line no-eval
-        const expressionResult = eval(expression);
-        if (expressionResult !== Number(answer)) {
-            return console.log(`${answer} is wrong answer ;(. Correct answer was ${expressionResult}.\nLet's try again, ${name()}`);
+
+        if (result !== Number(answer)) {
+            return console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name()}`);
         }
         console.log('Correct!');
     }
