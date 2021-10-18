@@ -31,7 +31,7 @@ export const playGameBrainProgression = () => {
         i += 1;
 
         if (randomElementValue !== Number(answer)) {
-            return console.log(`${answer} is wrong answer ;(. Correct answer was ${randomElementValue}.\nLet's try again, ${name()}`);
+            return console.log(`${answer} is wrong answer ;(. Correct answer was ${randomElementValue}.\nLet's try again, ${name()}!`);
         }
         console.log('Correct!');
     }

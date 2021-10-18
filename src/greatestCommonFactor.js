@@ -20,7 +20,7 @@ export const playGameBrainGCD = () => {
         // eslint-disable-next-line no-eval
         const expressionResult = gcd(firstRandomNumb, secondRandomNumb);
         if (expressionResult !== Number(answer)) {
-            return console.log(`${answer} is wrong answer ;(. Correct answer was ${expressionResult}.\nLet's try again, ${name()}`);
+            return console.log(`${answer} is wrong answer ;(. Correct answer was ${expressionResult}.\nLet's try again, ${name()}!`);
         }
         console.log('Correct!');
     }
