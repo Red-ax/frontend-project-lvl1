@@ -24,7 +24,7 @@ export const playGameBrainProgression = () => {
         const randomElement = Math.floor(Math.random() * progressionArr.length);
         const randomElementValue = progressionArr[randomElement];
         progressionArr[randomElement] = '..';
-        const progressionArrSpread = console.log(...progressionArr);
+        const progressionArrSpread = progressionArr.join(' ');
         const expression = `Question: ${progressionArrSpread}`;
         console.log(expression);
         const answer = readlineSync.question('Your answer: ');
