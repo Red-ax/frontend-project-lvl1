@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 import { randomInt } from './randomInt.js';
 import { name, greetings } from './cli.js';
+import { isPrime } from './isPrime.js';
 
 // eslint-disable-next-line import/prefer-default-export
 export const playGameBrainPrime = () => {
@@ -17,13 +18,7 @@ export const playGameBrainPrime = () => {
     const answer = readlineSync.question('Your answer: ');
     i += 1;
 
-    let primeNum = false;
-    for (let a = (answer / 2); a > 0; a -= 1) {
-      if (answer % a !== 0) {
-        primeNum = false;
-      }
-      primeNum = true;
-    }
+    const primeNum = isPrime(randomNum);
 
     if ((primeNum === false && answer !== 'no') || (primeNum === true && answer !== 'yes')) {
       return console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name()}!`);
