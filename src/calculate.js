@@ -36,7 +36,7 @@ export const playGameBrainCalc = () => {
         i += 1;
 
         if (result !== Number(answer)) {
-            return console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name()}`);
+            return console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name()}!`);
         }
         console.log('Correct!');
     }
